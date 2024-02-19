@@ -1,4 +1,5 @@
-﻿using AlgorithmsDataStructuresProblems.Interfaces;
+﻿using AlgorithmsDataStructuresProblems.Implementation;
+using AlgorithmsDataStructuresProblems.Interfaces;
 using AlgorithmsDataStructuresProblems.Warmup;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -12,7 +13,11 @@ namespace AlgorithmsDataStructuresProblems
 
             var problems = new Dictionary<int, IProblem>()
             {
-                { 1, new SumArrays() }
+                { 1, new SumArrays() },
+                { 2, new GradingStudents() },
+                { 3, new NumberLineJumps() },
+                { 4, new FormingMagicSquare() },
+                { 5, new ClimbingTheLeaderboard() }
             };
 
             Console.WriteLine("Selectează numărul problemei de rezolvat:");
