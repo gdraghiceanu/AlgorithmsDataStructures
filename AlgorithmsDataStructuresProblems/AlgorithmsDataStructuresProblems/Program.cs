@@ -1,5 +1,9 @@
-﻿using AlgorithmsDataStructuresProblems.Implementation;
+﻿using AlgorithmsDataStructuresProblems._1WeekPreparation._1Day;
+using AlgorithmsDataStructuresProblems._1WeekPreparation._2Day;
+using AlgorithmsDataStructuresProblems._1WeekPreparation._3Day;
+using AlgorithmsDataStructuresProblems.Implementation;
 using AlgorithmsDataStructuresProblems.Interfaces;
+using AlgorithmsDataStructuresProblems.PrepareInterview;
 using AlgorithmsDataStructuresProblems.Warmup;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -17,7 +21,16 @@ namespace AlgorithmsDataStructuresProblems
                 { 2, new GradingStudents() },
                 { 3, new NumberLineJumps() },
                 { 4, new FormingMagicSquare() },
-                { 5, new ClimbingTheLeaderboard() }
+                { 5, new ClimbingTheLeaderboard() },
+                { 6, new PlusMinus() },
+                { 7, new MinMaxSum() },
+                { 8, new FizzBuzz() },
+                { 9, new LonelyInteger() },
+                { 10, new DiagonalDifference() },
+                { 11, new CountingSort1() },
+                { 12, new FlippingMatrix() },
+                { 13, new FindZigZag() },
+                { 14, new LongestSubstring() },
             };
 
             Console.WriteLine("Selectează numărul problemei de rezolvat:");
