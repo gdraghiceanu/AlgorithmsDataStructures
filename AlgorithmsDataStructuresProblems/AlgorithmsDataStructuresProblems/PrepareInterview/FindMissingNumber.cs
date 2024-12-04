@@ -20,7 +20,7 @@ namespace AlgorithmsDataStructuresProblems.PrepareInterview
         public static int FindMissingNumberFunction(int[] arr)
         {
             var myDic = new Dictionary<int, int>();
-
+            var res = 0;
             foreach (int i in arr)
             {
                 if (myDic.ContainsKey(i))
@@ -29,9 +29,20 @@ namespace AlgorithmsDataStructuresProblems.PrepareInterview
                 }
                 else
                 {
-                    myDic
+                    myDic[i] = 1;
                 }
             }
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (!myDic.ContainsKey(i))
+                {
+                    res = i;
+                    break;
+                }
+            }
+
+            return res;
         }
     }
 }

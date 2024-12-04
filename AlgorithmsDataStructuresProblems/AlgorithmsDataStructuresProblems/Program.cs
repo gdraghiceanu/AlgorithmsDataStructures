@@ -31,6 +31,8 @@ namespace AlgorithmsDataStructuresProblems
                 { 12, new FlippingMatrix() },
                 { 13, new FindZigZag() },
                 { 14, new LongestSubstring() },
+                { 15, new FindMissingNumber() },
+                { 16, new ValidParentheses() },
             };
 
             Console.WriteLine("Selectează numărul problemei de rezolvat:");
