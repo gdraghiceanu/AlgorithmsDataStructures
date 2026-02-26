@@ -31,13 +31,13 @@ namespace AlgorithmsDataStructuresProblems.PrepareInterview
             {
                 if (stack.Count > 0)
                 {
-                    var current = stack.Peek();
                     if ( dict.ContainsKey(c) )
                     {
                         stack.Push(c);                        
                     }  
                     else
                     {
+                        var current = stack.Peek();
                         if (c == dict[current])
                         {                            
                             stack.Pop();
